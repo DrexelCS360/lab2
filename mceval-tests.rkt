@@ -1,7 +1,5 @@
 #lang racket
 (require rackunit)
-(require rackunit/text-ui)
-(require rackunit/gui)
 (require "mceval.rkt")
 
 (provide prob2-tests
