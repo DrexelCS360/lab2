@@ -32,7 +32,7 @@
         ((cond? exp) (mceval (cond->if exp) env))
         ((application? exp)
          (mcapply (mceval (operator exp) env)
-                   (list-of-values (operands exp) env)))
+                  (list-of-values (operands exp) env)))
         (else
          (error "Unknown expression type -- EVAL" exp))))
 
